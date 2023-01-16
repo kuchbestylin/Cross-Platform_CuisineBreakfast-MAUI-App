@@ -6,6 +6,8 @@
              x:DataType="viewmodels:MyBreakfastsViewModel"
              x:Class="CuisineBreakfast.MainPage">
 
+
+    
     <Grid Padding="16">
         <Grid.RowDefinitions>
             <RowDefinition Height="AUTO"></RowDefinition>
@@ -67,6 +69,9 @@
                                             Converter={StaticResource DateTimeToBreakfastDayConverter}}"></Label>
                                         <Label Text=","></Label>
                                         <Label Text="{Binding StartDateTime,
+                                            Converter={StaticResource DateTimeToTimeConverter}}"></Label>
+                                        <Label Text=" - "></Label>
+                                        <Label Text="{Binding EndDateTime,
                                             Converter={StaticResource DateTimeToTimeConverter}}"></Label>
                                     </FlexLayout>
                                     <!--Description-->
